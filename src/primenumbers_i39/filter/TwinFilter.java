@@ -17,7 +17,7 @@ public class TwinFilter implements IPrimeFactorizationFilter{
                 if (previousValue != -1) {
                     if (factor - previousValue == 2) {
                         filteredData.add(entry);
-                        continue;
+                        break;
                     }
                 }
                 previousValue = factor;
