@@ -1,13 +1,13 @@
-package primenumbers;
+package primenumbers_i39;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class PrimeFactorRepository implements IPrimeFactorRepository {
-    private Map<Long, PrimeFactorization> primeFactorizations = new HashMap<>();
+    private Map<Integer, PrimeFactorization> primeFactorizations = new HashMap<>();
 
     @Override
-    public PrimeFactorization getPrimeFactorization(long value) {
+    public PrimeFactorization getPrimeFactorization(int value) {
         return this.primeFactorizations.get(value);
     }
 

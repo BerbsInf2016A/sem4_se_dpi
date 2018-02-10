@@ -1,6 +1,7 @@
-package primenumbers;
+package primenumbers_i39;
 
 public interface IPrimeFactorRepository {
-    PrimeFactorization getPrimeFactorization(long prime);
+    PrimeFactorization getPrimeFactorization(int prime);
+
     void savePrimeFactorization(PrimeFactorization factorization);
 }

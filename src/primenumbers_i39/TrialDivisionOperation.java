@@ -1,4 +1,4 @@
-package primenumbers;
+package primenumbers_i39;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -11,27 +11,27 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
     public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit, IPrimeFactorRepository repository) {
         this.repository = repository;
         List<PrimeFactorization> factorizations = new LinkedList<>();
-        for (long i = lowerLimit; i<= upperLimit; i++) {
+        for (int i = lowerLimit; i <= upperLimit; i++) {
             this.generateAndSavePrimeFactors(i);
             factorizations.add(this.repository.getPrimeFactorization(i));
         }
         return factorizations;
     }
 
-    private List<Long> generateAndSavePrimeFactors(long number) {
+    private List<Integer> generateAndSavePrimeFactors(int number) {
         PrimeFactorization cachedValue = this.repository.getPrimeFactorization(number);
         if (cachedValue != null) return cachedValue.getFactors();
 
-        List<Long> smallestFactors = new ArrayList<>();
-        List<Long> factors = this.applyTrialDivision(number);
+        List<Integer> smallestFactors = new ArrayList<>();
+        List<Integer> factors = this.applyTrialDivision(number);
         if (factors.size() == 1) {
             // Smallest factor reached
             smallestFactors.add(factors.get(0));
             this.repository.savePrimeFactorization(new PrimeFactorization(number, smallestFactors));
             return smallestFactors;
         } else {
-            for (long factor : factors) {
-                List<Long> splittedFactors = this.generateAndSavePrimeFactors(factor);
+            for (int factor : factors) {
+                List<Integer> splittedFactors = this.generateAndSavePrimeFactors(factor);
                 smallestFactors.addAll(splittedFactors);
             }
         }
@@ -40,14 +40,14 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
         return smallestFactors;
     }
 
-    private List<Long> applyTrialDivision(long number) {
-        List<Long> results = new ArrayList<>();
-        long factor = 2;
-        while(number > 1){
-            if (number % factor == 0){
+    private List<Integer> applyTrialDivision(int number) {
+        List<Integer> results = new ArrayList<>();
+        int factor = 2;
+        while (number > 1) {
+            if (number % factor == 0) {
                 results.add(factor);
                 number = number / factor;
-            } else{
+            } else {
                 factor += 1;
             }
         }

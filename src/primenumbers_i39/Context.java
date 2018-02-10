@@ -1,4 +1,4 @@
-package primenumbers;
+package primenumbers_i39;
 
 import java.util.List;
 
