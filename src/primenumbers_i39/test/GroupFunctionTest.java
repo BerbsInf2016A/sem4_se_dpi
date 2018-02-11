@@ -22,14 +22,14 @@ public class GroupFunctionTest {
         List<int[]> actualData = group(data);
 
         List<int[]> expectedData = Stream
-                .of(      new int[]{2,11}
-                        , new int[]{3,4}
-                        , new int[]{5,3}
-                        , new int[]{7,1}
-                        , new int[]{11,1}
-                        , new int[]{13,1}
-                        , new int[]{17,1}
-                        , new int[]{19,1}
+                .of(    new int[]{1,7}
+                        , new int[]{1,11}
+                        , new int[]{1,13}
+                        , new int[]{1,17}
+                        , new int[]{1,19}
+                        , new int[]{3,5}
+                        , new int[]{4,3}
+                        , new int[]{11,2}
                         ).collect(Collectors.toList());
 
         assertEquals("Count of grouped data should be equal", expectedData.size(), actualData.size());

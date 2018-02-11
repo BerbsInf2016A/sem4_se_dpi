@@ -26,18 +26,13 @@ public class GroupFunction {
             }
         }
 
-        List<Map.Entry<Integer, Integer>> sortedCounts = counts.entrySet().stream()
-                .sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed()
-                        .thenComparing(Map.Entry.comparingByValue())).collect(Collectors.toList());
-
-
         return order(counts);
     }
 
     private static List<int[]> order(Map<Integer, Integer> counts) {
         List<int[]> values = new LinkedList<>();
         for (Map.Entry<Integer, Integer> entry : counts.entrySet() ) {
-            values.add(new int[]{entry.getKey(), entry.getValue()});
+            values.add(new int[]{entry.getValue(), entry.getKey()});
         }
 
         Comparator<int[]> comparator = Comparator.comparing(entry -> entry[0]);
