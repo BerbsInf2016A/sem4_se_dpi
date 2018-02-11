@@ -11,7 +11,7 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
     public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit, IPrimeFactorRepository repository) {
         this.repository = repository;
         List<PrimeFactorization> factorizations = new LinkedList<>();
-        if(lowerLimit == 0 && upperLimit == 0) return factorizations;
+        if (lowerLimit == 0 && upperLimit == 0) return factorizations;
 
         for (int i = lowerLimit; i <= upperLimit; i++) {
             this.generateAndSavePrimeFactors(i);

@@ -7,7 +7,7 @@ import primenumbers_i39.TrialDivisionOperation;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static primenumbers_i39.functions.CountFunction.count;
 
 public class CountFunctionTest {

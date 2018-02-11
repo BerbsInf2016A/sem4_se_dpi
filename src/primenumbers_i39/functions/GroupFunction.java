@@ -8,9 +8,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class GroupFunction {
     public static List<int[]> group(List<PrimeFactorization> data) {
@@ -19,7 +17,7 @@ public class GroupFunction {
         // Sotierend Aufsteigend
 
         Map<Integer, Integer> counts = new HashMap<>();
-        for (PrimeFactorization entry : data ) {
+        for (PrimeFactorization entry : data) {
             for (int factor : entry.getFactors()) {
                 if (!counts.containsKey(factor)) counts.put(factor, 1);
                 else counts.put(factor, counts.get(factor) + 1);
@@ -31,7 +29,7 @@ public class GroupFunction {
 
     private static List<int[]> order(Map<Integer, Integer> counts) {
         List<int[]> values = new LinkedList<>();
-        for (Map.Entry<Integer, Integer> entry : counts.entrySet() ) {
+        for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {
             values.add(new int[]{entry.getValue(), entry.getKey()});
         }
 

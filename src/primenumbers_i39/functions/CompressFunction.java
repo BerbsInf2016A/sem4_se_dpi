@@ -14,19 +14,19 @@ public class CompressFunction {
         // Value: Zerlegung mit Hochzahlen
         // 48: 2^4*3
         StringBuilder sb = new StringBuilder();
-        for (PrimeFactorization entry : data ) {
+        for (PrimeFactorization entry : data) {
             sb.append(String.format("%d: ", entry.getNumber()));
             Map<Integer, Long> countedFactors = entry.getFactors().stream()
                     .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             int counter = 0;
-            for (Map.Entry<Integer, Long> factor : countedFactors.entrySet() ) {
+            for (Map.Entry<Integer, Long> factor : countedFactors.entrySet()) {
                 int factorValue = factor.getKey();
                 long count = factor.getValue();
-                if (count != 1L )  {
+                if (count != 1L) {
                     if (counter == 0) sb.append(String.format("%d^%d ", factorValue, count));
                     else sb.append(String.format("* %d^%d ", factorValue, count));
                 }
-                if (count == 1L)  {
+                if (count == 1L) {
                     if (counter == 0) sb.append(String.format("%d ", factorValue));
                     else sb.append(String.format("* %d ", factorValue, count));
                 }

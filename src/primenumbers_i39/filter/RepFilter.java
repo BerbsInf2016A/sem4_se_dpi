@@ -10,15 +10,20 @@ import java.util.stream.Collectors;
 
 public class RepFilter implements IPrimeFactorizationFilter {
     static RepFilter instance = new RepFilter();
+
+    public static List<PrimeFactorization> rep(List<PrimeFactorization> data) {
+        return RepFilter.instance.filterObjects(data);
+    }
+
     @Override
     public List<PrimeFactorization> filterObjects(List<PrimeFactorization> data) {
         List<PrimeFactorization> filteredData = new ArrayList<>();
 
-        for (PrimeFactorization entry : data ) {
+        for (PrimeFactorization entry : data) {
             Map<Integer, Long> counted = entry.getFactors().stream()
                     .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             for (Map.Entry count : counted.entrySet()) {
-                if ((long)count.getValue() >= 3L) {
+                if ((long) count.getValue() >= 3L) {
                     filteredData.add(entry);
                     break;
                 }
@@ -26,9 +31,5 @@ public class RepFilter implements IPrimeFactorizationFilter {
         }
 
         return filteredData;
-    }
-
-    public static List<PrimeFactorization> rep(List<PrimeFactorization> data) {
-       return RepFilter.instance.filterObjects(data);
     }
 }

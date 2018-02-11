@@ -8,7 +8,7 @@ import primenumbers_i39.PrimeFactorization;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static primenumbers_i39.functions.CompressFunction.compress;
 
 public class CompressFunctionTest {

@@ -5,13 +5,18 @@ import primenumbers_i39.PrimeFactorization;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TwinFilter implements IPrimeFactorizationFilter{
+public class TwinFilter implements IPrimeFactorizationFilter {
     static TwinFilter instance = new TwinFilter();
+
+    public static List<PrimeFactorization> twin(List<PrimeFactorization> data) {
+        return TwinFilter.instance.filterObjects(data);
+    }
+
     @Override
     public List<PrimeFactorization> filterObjects(List<PrimeFactorization> data) {
         List<PrimeFactorization> filteredData = new ArrayList<>();
 
-        for (PrimeFactorization entry : data ) {
+        for (PrimeFactorization entry : data) {
             int previousValue = -1;
             for (int factor : entry.getFactors()) {
                 if (previousValue != -1) {
@@ -25,9 +30,5 @@ public class TwinFilter implements IPrimeFactorizationFilter{
         }
 
         return filteredData;
-    }
-
-    public static List<PrimeFactorization> twin(List<PrimeFactorization> data) {
-        return TwinFilter.instance.filterObjects(data);
     }
 }
