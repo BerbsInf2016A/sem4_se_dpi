@@ -10,7 +10,13 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static task39.functions.CountFunction.count;
 
+/**
+ * Tests for the count function.
+ */
 public class CountFunctionTest {
+    /**
+     * The count function should return the correct count for the entries, given there are entries.
+     */
     @Test
     public void count_ShouldBe26() {
 
@@ -20,6 +26,9 @@ public class CountFunctionTest {
         assertEquals("Count should be 26", 26, count(data));
     }
 
+    /**
+     * The count function should return 0, if there are no entries in the data.
+     */
     @Test
     public void count_ShouldBe0() {
 

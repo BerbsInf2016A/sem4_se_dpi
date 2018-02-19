@@ -11,12 +11,20 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static task39.functions.CompressFunction.compress;
 
+/**
+ * Tests for the compress function.
+ */
 public class CompressFunctionTest {
+    /**
+     * A test for the compress function.
+     */
     @Test
     public void compressTest() {
+        // Generate test data.
         Context context = new Context(new FermatOperation());
         List<PrimeFactorization> data = context.executeStrategy(10, 20);
 
+        // The expected data in the range of the test data.
         List<String> expectedData = new ArrayList<>();
         expectedData.add("10: 2 * 5");
         expectedData.add("11: 11");
@@ -30,8 +38,10 @@ public class CompressFunctionTest {
         expectedData.add("19: 19");
         expectedData.add("20: 2^2 * 5");
 
+        // Call the function to test.
         List<String> actualData = compress(data);
 
+        // Assert the correct result.
         assertEquals("Should contain the correct number of compressed strings", expectedData.size(), actualData.size());
         for (int i = 0; i < expectedData.size(); i++) {
             String expected = expectedData.get(i);
@@ -39,7 +49,5 @@ public class CompressFunctionTest {
 
             assertEquals("Compress format should be equal", expected, actual);
         }
-
     }
-
 }

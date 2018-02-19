@@ -10,7 +10,7 @@ import task39.TrialDivisionOperation;
 import java.util.List;
 
 
-public class TrialDivisionOperationTest {
+public class StrategyTest {
     @Test
     public void doOperation_TrialAndFermat_SameResult() throws Exception {
         Context context = new Context(new FermatOperation());
