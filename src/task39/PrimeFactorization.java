@@ -1,4 +1,4 @@
-package primenumbers_i39;
+package task39;
 
 import java.util.List;
 import java.util.stream.Collectors;

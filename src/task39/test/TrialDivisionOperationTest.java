@@ -1,11 +1,11 @@
-package primenumbers_i39.test;
+package task39.test;
 
 import org.junit.Assert;
 import org.junit.Test;
-import primenumbers_i39.Context;
-import primenumbers_i39.FermatOperation;
-import primenumbers_i39.PrimeFactorization;
-import primenumbers_i39.TrialDivisionOperation;
+import task39.Context;
+import task39.FermatOperation;
+import task39.PrimeFactorization;
+import task39.TrialDivisionOperation;
 
 import java.util.List;
 

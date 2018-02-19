@@ -1,18 +1,18 @@
-package primenumbers_i39.test;
+package task39.test;
 
 import org.junit.Test;
-import primenumbers_i39.Context;
-import primenumbers_i39.PrimeFactorization;
-import primenumbers_i39.TrialDivisionOperation;
-import primenumbers_i39.filter.IPrimeFactorizationFilter;
-import primenumbers_i39.filter.RepFilter;
+import task39.Context;
+import task39.PrimeFactorization;
+import task39.TrialDivisionOperation;
+import task39.filter.IPrimeFactorizationFilter;
+import task39.filter.RepFilter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static primenumbers_i39.filter.RepFilter.rep;
-import static primenumbers_i39.test.TestHelpers.assertFilteredArrays;
+import static task39.filter.RepFilter.rep;
+import static task39.test.TestHelpers.assertFilteredArrays;
 
 public class RepFilterTest {
     @Test

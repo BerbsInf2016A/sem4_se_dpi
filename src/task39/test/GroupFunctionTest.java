@@ -1,9 +1,9 @@
-package primenumbers_i39.test;
+package task39.test;
 
 import org.junit.Test;
-import primenumbers_i39.Context;
-import primenumbers_i39.PrimeFactorization;
-import primenumbers_i39.TrialDivisionOperation;
+import task39.Context;
+import task39.PrimeFactorization;
+import task39.TrialDivisionOperation;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
-import static primenumbers_i39.functions.GroupFunction.group;
+import static task39.functions.GroupFunction.group;
 
 public class GroupFunctionTest {
     @Test

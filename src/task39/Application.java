@@ -1,14 +1,14 @@
-package primenumbers_i39;
+package task39;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static primenumbers_i39.filter.OneFilter.one;
-import static primenumbers_i39.filter.RepFilter.rep;
-import static primenumbers_i39.filter.TwinFilter.twin;
-import static primenumbers_i39.functions.CompressFunction.compress;
-import static primenumbers_i39.functions.CountFunction.count;
-import static primenumbers_i39.functions.GroupFunction.group;
+import static task39.filter.OneFilter.one;
+import static task39.filter.RepFilter.rep;
+import static task39.filter.TwinFilter.twin;
+import static task39.functions.CompressFunction.compress;
+import static task39.functions.CountFunction.count;
+import static task39.functions.GroupFunction.group;
 
 public class Application {
     public static void main(String[] args) {

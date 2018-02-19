@@ -1,15 +1,15 @@
-package primenumbers_i39.test;
+package task39.test;
 
 import org.junit.Test;
-import primenumbers_i39.Context;
-import primenumbers_i39.FermatOperation;
-import primenumbers_i39.PrimeFactorization;
+import task39.Context;
+import task39.FermatOperation;
+import task39.PrimeFactorization;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static primenumbers_i39.functions.CompressFunction.compress;
+import static task39.functions.CompressFunction.compress;
 
 public class CompressFunctionTest {
     @Test

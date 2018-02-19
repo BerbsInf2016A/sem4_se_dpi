@@ -1,6 +1,6 @@
-package primenumbers_i39.functions;
+package task39.functions;
 
-import primenumbers_i39.PrimeFactorization;
+import task39.PrimeFactorization;
 
 import java.util.ArrayList;
 import java.util.List;
