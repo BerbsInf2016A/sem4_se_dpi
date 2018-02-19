@@ -5,41 +5,33 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class FermatOperation implements IPrimeFactorStrategy {
-    private IPrimeFactorRepository repository;
 
     @Override
-    public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit, IPrimeFactorRepository repository) {
-        this.repository = repository;
+    public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit) {
         ArrayList<PrimeFactorization> factorizations = new ArrayList<>();
         if (lowerLimit == 0 && upperLimit == 0) return factorizations;
 
         for (int i = lowerLimit; i <= upperLimit; i++) {
-            this.generateAndSavePrimeFactors(i);
-            factorizations.add(this.repository.getPrimeFactorization(i));
+            factorizations.add(new PrimeFactorization(i,generatePrimeFactors(i)));
         }
         return factorizations;
     }
 
-    private List<Integer> generateAndSavePrimeFactors(int number) {
-        PrimeFactorization cachedValue = this.repository.getPrimeFactorization(number);
-        if (cachedValue != null) return cachedValue.getFactors();
-
+    private List<Integer> generatePrimeFactors(int number) {
         List<Integer> smallestFactors = new ArrayList<>();
         List<Integer> factors = this.applyFermat(number);
         if (factors.contains(1)) {
             // Smallest factor reached
             List<Integer> collect = factors.stream().filter(t -> t != 1).collect(Collectors.toList());
             smallestFactors.addAll(collect);
-            this.repository.savePrimeFactorization(new PrimeFactorization(number, smallestFactors));
             return smallestFactors;
         } else {
             for (int factor : factors) {
-                List<Integer> splittedFactors = this.generateAndSavePrimeFactors(factor);
+                List<Integer> splittedFactors = this.generatePrimeFactors(factor);
                 smallestFactors.addAll(splittedFactors);
             }
         }
 
-        this.repository.savePrimeFactorization(new PrimeFactorization(number, smallestFactors));
         return smallestFactors;
     }
 
