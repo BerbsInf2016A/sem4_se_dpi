@@ -12,6 +12,7 @@ import static task39.functions.GroupFunction.group;
 
 public class Application {
     public static void main(String[] args) {
+        // Fermat:
         Context fermatContext = new Context(new FermatOperation());
         List<PrimeFactorization> factorizationsFermat = fermatContext.executeStrategy(10, 1000);
 
@@ -30,7 +31,6 @@ public class Application {
         fermatCompress.forEach(t -> System.out.println("----" + t));
 
         // Trial:
-
         Context trialContext = new Context(new TrialDivisionOperation());
         List<PrimeFactorization> factorizationsTrial = trialContext.executeStrategy(10, 1000);
 

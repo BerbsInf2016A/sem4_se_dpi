@@ -4,8 +4,18 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Strategy using TrialDivision to generate prime factors.
+ */
 public class TrialDivisionOperation implements IPrimeFactorStrategy {
 
+    /**
+     * Execute the strategy to generate the prime factors for all numbers in the range.
+     *
+     * @param lowerLimit The lower limit of the range.
+     * @param upperLimit The upper limit of the range.
+     * @return A list containing the prime factorizations.
+     */
     @Override
     public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit) {
         List<PrimeFactorization> factorizations = new LinkedList<>();
@@ -17,6 +27,12 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
         return factorizations;
     }
 
+    /**
+     * Generate the prime factors for a number.
+     *
+     * @param number The number to generate the prime factors for.
+     * @return A list containing the prime factors for the given number.
+     */
     private List<Integer> generatePrimeFactors(int number) {
 
         List<Integer> smallestFactors = new ArrayList<>();
@@ -35,6 +51,12 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
         return smallestFactors;
     }
 
+    /**
+     * Apply the TrialDivision operation to a given number.
+     *
+     * @param number The number to apply Fermat on.
+     * @return A list of factors for the given number.
+     */
     private List<Integer> applyTrialDivision(int number) {
         List<Integer> results = new ArrayList<>();
         int factor = 2;

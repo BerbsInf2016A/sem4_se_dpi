@@ -9,17 +9,23 @@ import task39.TrialDivisionOperation;
 
 import java.util.List;
 
-
+/**
+ * Tests for the strategies.
+ */
 public class StrategyTest {
+
+    /**
+     * Creating data in the same range with both strategies must result in the same results.
+     */
     @Test
-    public void doOperation_TrialAndFermat_SameResult() throws Exception {
-        Context context = new Context(new FermatOperation());
-        List<PrimeFactorization> factorizationsFermat = context.executeStrategy(10, 1000);
+    public void doOperation_TrialAndFermat_SameResult() {
+        Context fermatContext = new Context(new FermatOperation());
+        List<PrimeFactorization> factorizationsFermat = fermatContext.executeStrategy(10, 1000);
 
+        Context trialContext = new Context(new TrialDivisionOperation());
+        List<PrimeFactorization> factorizationsTrial = trialContext.executeStrategy(10, 1000);
 
-        Context context2 = new Context(new TrialDivisionOperation());
-        List<PrimeFactorization> factorizationsTrial = context2.executeStrategy(10, 1000);
-
+        // Both strategies must create the same results.
         for (int i = 0; i < factorizationsFermat.size(); i++) {
             PrimeFactorization fermat = factorizationsFermat.get(i);
             PrimeFactorization trial = factorizationsTrial.get(i);

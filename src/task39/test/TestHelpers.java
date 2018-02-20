@@ -7,7 +7,16 @@ import java.util.List;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Contains helper functions for tests.
+ */
 public class TestHelpers {
+    /**
+     * Asserts, that the filtered data is the expected data.
+     *
+     * @param expected The expected data.
+     * @param filteredData The filtered data.
+     */
     static void assertFilteredArrays(List<PrimeFactorization> expected, List<PrimeFactorization> filteredData) {
         assertEquals("Should return the same count of data", expected.size(), filteredData.size());
         for (int i = 0; i < expected.size(); i++) {

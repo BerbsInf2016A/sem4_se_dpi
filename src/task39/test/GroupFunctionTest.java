@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static task39.functions.GroupFunction.group;
-//TODO: All tests: Add tests for empty list of data.
+//TODO: All tests: Add tests for empty list of data or invalid data.
 /**
  * Tests for the group function.
  */

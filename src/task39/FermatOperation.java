@@ -3,9 +3,19 @@ package task39;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+// TODO: Operation of stratgy?
+/**
+ * Strategy using Fermat to generate prime factors.
+ */
 public class FermatOperation implements IPrimeFactorStrategy {
 
+    /**
+     * Execute the strategy to generate the prime factors for all numbers in the range.
+     *
+     * @param lowerLimit The lower limit of the range.
+     * @param upperLimit The upper limit of the range.
+     * @return A list containing the prime factorizations.
+     */
     @Override
     public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit) {
         ArrayList<PrimeFactorization> factorizations = new ArrayList<>();
@@ -17,6 +27,12 @@ public class FermatOperation implements IPrimeFactorStrategy {
         return factorizations;
     }
 
+    /**
+     * Generate the prime factors for a number.
+     *
+     * @param number The number to generate the prime factors for.
+     * @return A list containing the prime factors for the given number.
+     */
     private List<Integer> generatePrimeFactors(int number) {
         List<Integer> smallestFactors = new ArrayList<>();
         List<Integer> factors = this.applyFermat(number);
@@ -35,6 +51,12 @@ public class FermatOperation implements IPrimeFactorStrategy {
         return smallestFactors;
     }
 
+    /**
+     * Apply the Fermat operation to a given number.
+     *
+     * @param n The number to apply Fermat on.
+     * @return A list of factors for the given number.
+     */
     private List<Integer> applyFermat(int n) {
         ArrayList<Integer> factors = new ArrayList<>();
         if (n % 2 == 0) {
@@ -54,5 +76,4 @@ public class FermatOperation implements IPrimeFactorStrategy {
         factors.add(a + b_root);
         return factors;
     }
-
 }
