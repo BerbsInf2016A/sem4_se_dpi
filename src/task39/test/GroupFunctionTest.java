@@ -5,6 +5,7 @@ import task39.Context;
 import task39.PrimeFactorization;
 import task39.TrialDivisionOperation;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -13,6 +14,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static task39.functions.GroupFunction.group;
 //TODO: All tests: Add tests for empty list of data or invalid data.
+
 /**
  * Tests for the group function.
  */
@@ -50,5 +52,16 @@ public class GroupFunctionTest {
             assertArrayEquals("Counts for grouped data should be equal", expected, actual);
 
         }
+    }
+
+    /**
+     * Ensure, that the group function won't crash with an empty list.
+     */
+    @Test
+    public void group_emptyData() {
+
+        List<int[]> result = group(new ArrayList<>());
+
+        assertEquals("Result should be empty", 0, result.size());
     }
 }

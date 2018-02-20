@@ -32,8 +32,6 @@ public class StrategyTest {
 
             Assert.assertEquals("Should be for the same number", fermat.getNumber(), trial.getNumber());
             Assert.assertArrayEquals("Should contain the same factors", fermat.getFactors().toArray(), trial.getFactors().toArray());
-
         }
     }
-
 }

@@ -9,7 +9,7 @@ public class Context {
     /**
      * The search strategy which should be executed.
      */
-    private IPrimeFactorStrategy strategy;
+    private final IPrimeFactorStrategy strategy;
 
     /**
      * Constructor for the Context.

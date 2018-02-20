@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 // TODO: Operation of stratgy?
+
 /**
  * Strategy using Fermat to generate prime factors.
  */
@@ -22,7 +23,7 @@ public class FermatOperation implements IPrimeFactorStrategy {
         if (lowerLimit == 0 && upperLimit == 0) return factorizations;
 
         for (int i = lowerLimit; i <= upperLimit; i++) {
-            factorizations.add(new PrimeFactorization(i,generatePrimeFactors(i)));
+            factorizations.add(new PrimeFactorization(i, generatePrimeFactors(i)));
         }
         return factorizations;
     }
@@ -43,8 +44,8 @@ public class FermatOperation implements IPrimeFactorStrategy {
             return smallestFactors;
         } else {
             for (int factor : factors) {
-                List<Integer> splittedFactors = this.generatePrimeFactors(factor);
-                smallestFactors.addAll(splittedFactors);
+                List<Integer> dividedFactors = this.generatePrimeFactors(factor);
+                smallestFactors.addAll(dividedFactors);
             }
         }
 

@@ -50,4 +50,15 @@ public class CompressFunctionTest {
             assertEquals("Compress format should be equal", expected, actual);
         }
     }
+
+    /**
+     * Ensure, that the compress function won't crash on a empty list.
+     */
+    @Test
+    public void compress_emptyData() {
+        List<String> result = compress(new ArrayList<>());
+
+        assertEquals("Result should be empty", 0, result.size());
+    }
+
 }

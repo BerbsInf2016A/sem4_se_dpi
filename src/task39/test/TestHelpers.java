@@ -14,7 +14,7 @@ public class TestHelpers {
     /**
      * Asserts, that the filtered data is the expected data.
      *
-     * @param expected The expected data.
+     * @param expected     The expected data.
      * @param filteredData The filtered data.
      */
     static void assertFilteredArrays(List<PrimeFactorization> expected, List<PrimeFactorization> filteredData) {

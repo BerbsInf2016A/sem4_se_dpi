@@ -16,7 +16,7 @@ public class TwinFilter implements IPrimeFactorizationFilter {
      * TwinFilter twin = new TwinFilter();
      * twin.filterObjects(data).
      */
-    static TwinFilter instance = new TwinFilter();
+    static final TwinFilter instance = new TwinFilter();
 
     /**
      * Static method to filter out all entries, which do not meet the following condition:

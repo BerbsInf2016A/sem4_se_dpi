@@ -19,7 +19,7 @@ public class GroupFunction {
      *
      * @param data The data to group.
      * @return A list with the grouped entries. The first entry in the array is the number of occurrences,
-     *         the second entry is the prime factor.
+     * the second entry is the prime factor.
      */
     public static List<int[]> group(List<PrimeFactorization> data) {
         // Count the prime factors.
@@ -39,7 +39,7 @@ public class GroupFunction {
      *
      * @param counts A map with a prime factor as key and the count of the prime factor as value.
      * @return A list of integer arrays. The first entry is the count and the second entry is the
-     *         prime factor.
+     * prime factor.
      */
     private static List<int[]> createOrderedList(Map<Integer, Integer> counts) {
         List<int[]> values = new LinkedList<>();

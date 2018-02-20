@@ -16,7 +16,7 @@ public class OneFilter implements IPrimeFactorizationFilter {
      * OneFilter one = new OneFilter();
      * one.filterObjects(data).
      */
-    static OneFilter instance = new OneFilter();
+    static final OneFilter instance = new OneFilter();
 
     /**
      * Static method to filter out all entries, which do not meet the following condition:

@@ -12,14 +12,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static task39.filter.OneFilter.one;
 import static task39.test.TestHelpers.assertFilteredArrays;
 
+/**
+ * Tests for the OneFilter.
+ */
 public class OneFilterTest {
+    /**
+     * Execute the filter and assert the correct result.
+     */
     @Test
     public void oneFilter_filterObjects() {
         Context context = new Context(new TrialDivisionOperation());
         List<PrimeFactorization> data = context.executeStrategy(10, 35);
+
         IPrimeFactorizationFilter filter = new OneFilter();
         List<PrimeFactorization> filteredData = filter.filterObjects(data);
 
@@ -31,6 +39,9 @@ public class OneFilterTest {
         assertFilteredArrays(expected, filteredData);
     }
 
+    /**
+     * Execute the filter and assert the correct result.
+     */
     @Test
     public void shortStaticOne() {
         Context context = new Context(new TrialDivisionOperation());
@@ -43,4 +54,15 @@ public class OneFilterTest {
 
         assertFilteredArrays(expected, filteredData);
     }
+
+    /**
+     * Ensure the filter won't crash on a empty list.
+     */
+    @Test
+    public void oneFilter_emptyList() {
+        List<PrimeFactorization> result = one(new ArrayList<>());
+
+        assertEquals("Result should be empty", 0, result.size());
+    }
+
 }

@@ -35,12 +35,13 @@ public class CompressFunction {
                 int factorValue = factor.getKey();
                 long currentFactorCount = factor.getValue();
                 if (currentFactorCount != 1L) { // Factor is multiple times in the factorization.
-                    if (firstFactorInCurrentFactorization) sb.append(String.format("%d^%d ", factorValue, currentFactorCount));
+                    if (firstFactorInCurrentFactorization)
+                        sb.append(String.format("%d^%d ", factorValue, currentFactorCount));
                     else sb.append(String.format("* %d^%d ", factorValue, currentFactorCount));
                 }
                 if (currentFactorCount == 1L) { // Factor is only one time in the factorization.
                     if (firstFactorInCurrentFactorization) sb.append(String.format("%d ", factorValue));
-                    else sb.append(String.format("* %d ", factorValue, currentFactorCount));
+                    else sb.append(String.format("* %d ", factorValue));
                 }
                 firstFactorInCurrentFactorization = false;
             }

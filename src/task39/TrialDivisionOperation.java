@@ -43,8 +43,8 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
             return smallestFactors;
         } else {
             for (int factor : factors) {
-                List<Integer> splittedFactors = this.generatePrimeFactors(factor);
-                smallestFactors.addAll(splittedFactors);
+                List<Integer> dividedFactors = this.generatePrimeFactors(factor);
+                smallestFactors.addAll(dividedFactors);
             }
         }
 

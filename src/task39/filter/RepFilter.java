@@ -19,7 +19,7 @@ public class RepFilter implements IPrimeFactorizationFilter {
      * RepFilter rep = new RepFilter();
      * rep.filterObjects(data).
      */
-    static RepFilter instance = new RepFilter();
+    static final RepFilter instance = new RepFilter();
 
     /**
      * Static method to filter out all entries, which do not meet the following condition:
