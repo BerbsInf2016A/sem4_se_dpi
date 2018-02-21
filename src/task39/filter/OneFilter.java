@@ -16,7 +16,7 @@ public class OneFilter implements IPrimeFactorizationFilter {
      * OneFilter one = new OneFilter();
      * one.filterObjects(data).
      */
-    static final OneFilter instance = new OneFilter();
+    private static final OneFilter instance = new OneFilter();
 
     /**
      * Static method to filter out all entries, which do not meet the following condition:
@@ -57,7 +57,7 @@ public class OneFilter implements IPrimeFactorizationFilter {
      * @param max The maximum.
      * @return True, if the difference is 1, false if not.
      */
-    boolean minMaxDifferenceIsOne(int min, int max) {
+    private boolean minMaxDifferenceIsOne(int min, int max) {
         return max - min == 1;
     }
 }
