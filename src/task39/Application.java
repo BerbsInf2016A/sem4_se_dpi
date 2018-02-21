@@ -12,6 +12,9 @@ import static task39.functions.GroupFunction.group;
 
 public class Application {
     public static void main(String[] args) {
+
+        // Reminder: Cache (Repository) wurde nach Rücksprache per Email nicht implementiert.
+
         // Fermat:
         Context fermatContext = new Context(new FermatOperation());
         List<PrimeFactorization> factorizationsFermat = fermatContext.executeStrategy(10, 1000);
@@ -44,7 +47,7 @@ public class Application {
         List<int[]> trialGroups = group(twin(factorizationsTrial));
         trialGroups.forEach(t -> System.out.println("----" + Arrays.toString(t)));
 
-        System.out.println("Fermat-Strategy: Twins --> compress ");
+        System.out.println("Trial-Strategy: Twins --> compress ");
         List<String> trialCompress = compress(twin(factorizationsTrial));
         trialCompress.forEach(t -> System.out.println("----" + t));
     }
