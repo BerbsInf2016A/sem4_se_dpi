@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a69b56af-6784-41de-97a0-121b7a0ac7c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/Context.java" afterPath="$PROJECT_DIR$/src/task39/Context.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/FermatOperation.java" afterPath="$PROJECT_DIR$/src/task39/FermatOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/PrimeFactorization.java" afterPath="$PROJECT_DIR$/src/task39/PrimeFactorization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/TrialDivisionOperation.java" afterPath="$PROJECT_DIR$/src/task39/TrialDivisionOperation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/filter/OneFilter.java" afterPath="$PROJECT_DIR$/src/task39/filter/OneFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/filter/RepFilter.java" afterPath="$PROJECT_DIR$/src/task39/filter/RepFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/filter/TwinFilter.java" afterPath="$PROJECT_DIR$/src/task39/filter/TwinFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/functions/CompressFunction.java" afterPath="$PROJECT_DIR$/src/task39/functions/CompressFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/functions/GroupFunction.java" afterPath="$PROJECT_DIR$/src/task39/functions/GroupFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/CompressFunctionTest.java" afterPath="$PROJECT_DIR$/src/task39/test/CompressFunctionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java" afterPath="$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/OneFilterTest.java" afterPath="$PROJECT_DIR$/src/task39/test/OneFilterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/RepFilterTest.java" afterPath="$PROJECT_DIR$/src/task39/test/RepFilterTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/StrategyTest.java" afterPath="$PROJECT_DIR$/src/task39/test/StrategyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/TestHelpers.java" afterPath="$PROJECT_DIR$/src/task39/test/TestHelpers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/task39/test/TwinFilterTest.java" afterPath="$PROJECT_DIR$/src/task39/test/TwinFilterTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/task39/FermatOperation.java" afterPath="$PROJECT_DIR$/src/task39/FermatOperation.java" />
+      <change beforePath="$PROJECT_DIR$/src/task39/PrimeFactorization.java" afterPath="$PROJECT_DIR$/src/task39/PrimeFactorization.java" />
+      <change beforePath="$PROJECT_DIR$/src/task39/TrialDivisionOperation.java" afterPath="$PROJECT_DIR$/src/task39/TrialDivisionOperation.java" />
+      <change beforePath="$PROJECT_DIR$/src/task39/functions/GroupFunction.java" afterPath="$PROJECT_DIR$/src/task39/functions/GroupFunction.java" />
+      <change beforePath="$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java" afterPath="$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/task39/test/StrategyTest.java" afterPath="$PROJECT_DIR$/src/task39/test/StrategyTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,15 +18,66 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sem4_se_dpi$All_in_sem4_se_dpi.coverage" NAME="All in sem4_se_dpi Coverage Results" MODIFIED="1518280423719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/sem4_se_dpi$All_in_sem4_se_dpi_i39__4_.coverage" NAME="All in sem4_se_dpi_i39 (4) Coverage Results" MODIFIED="1519051342566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/sem4_se_dpi$TrialDivisionOperationTest.coverage" NAME="TrialDivisionOperationTest Coverage Results" MODIFIED="1518273417542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>primenumbers.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/sem4_se_dpi$All_in_sem4_se_dpi_i39__1_.coverage" NAME="All in sem4_se_dpi_i39 (1) Coverage Results" MODIFIED="1518291444943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/sem4_se_dpi$All_in_sem4_se_dpi.coverage" NAME="All in sem4_se_dpi Coverage Results" MODIFIED="1518280423719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="GroupFunctionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimeFactorization.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task39/PrimeFactorization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrialDivisionOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task39/TrialDivisionOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FermatOperation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/task39/FermatOperation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategyTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/task39/test/StrategyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1087">
+              <caret line="75" column="38" lean-forward="false" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,16 +145,16 @@
         <option value="$PROJECT_DIR$/src/task39/Context.java" />
         <option value="$PROJECT_DIR$/src/task39/Application.java" />
         <option value="$PROJECT_DIR$/src/task39/IPrimeFactorStrategy.java" />
-        <option value="$PROJECT_DIR$/src/task39/PrimeFactorization.java" />
-        <option value="$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java" />
         <option value="$PROJECT_DIR$/src/task39/test/CompressFunctionTest.java" />
-        <option value="$PROJECT_DIR$/src/task39/test/StrategyTest.java" />
         <option value="$PROJECT_DIR$/src/task39/test/TwinFilterTest.java" />
         <option value="$PROJECT_DIR$/src/task39/test/RepFilterTest.java" />
         <option value="$PROJECT_DIR$/src/task39/test/OneFilterTest.java" />
         <option value="$PROJECT_DIR$/src/task39/filter/OneFilter.java" />
         <option value="$PROJECT_DIR$/src/task39/functions/CompressFunction.java" />
         <option value="$PROJECT_DIR$/src/task39/TrialDivisionOperation.java" />
+        <option value="$PROJECT_DIR$/src/task39/test/StrategyTest.java" />
+        <option value="$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java" />
+        <option value="$PROJECT_DIR$/src/task39/PrimeFactorization.java" />
         <option value="$PROJECT_DIR$/src/task39/FermatOperation.java" />
       </list>
     </option>
@@ -148,8 +189,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,8 +236,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,8 +271,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in sem4_se_dpi_i39 (2)">
-    <configuration name="All in sem4_se_dpi_i39 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in sem4_se_dpi_i39">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="All in sem4_se_dpi_i39 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="sem4_se_dpi_i39" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -251,7 +313,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="All in sem4_se_dpi_i39 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in sem4_se_dpi_i39 (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="sem4_se_dpi_i39" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -291,7 +353,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="OneFilterTest.oneFilter_emptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StrategyTest.fermat_InvalidParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="task39.test.*" />
@@ -302,8 +364,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="task39.test" />
-      <option name="MAIN_CLASS_NAME" value="task39.test.OneFilterTest" />
-      <option name="METHOD_NAME" value="oneFilter_emptyList" />
+      <option name="MAIN_CLASS_NAME" value="task39.test.StrategyTest" />
+      <option name="METHOD_NAME" value="fermat_InvalidParameters" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -316,7 +378,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RepFilterTest.repFilter_emptyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StrategyTest.trialDivision_InvalidParameters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="task39.test.*" />
@@ -327,8 +389,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="task39.test" />
-      <option name="MAIN_CLASS_NAME" value="task39.test.RepFilterTest" />
-      <option name="METHOD_NAME" value="repFilter_emptyList" />
+      <option name="MAIN_CLASS_NAME" value="task39.test.StrategyTest" />
+      <option name="METHOD_NAME" value="trialDivision_InvalidParameters" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -340,27 +402,6 @@
       </option>
       <envs />
       <patterns />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -393,12 +434,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="sem4_se_dpi" />
       <envs />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -434,20 +469,26 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.OneFilterTest.oneFilter_emptyList" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RepFilterTest.repFilter_emptyList" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (2)" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (2)" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (3)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.StrategyTest.trialDivision_InvalidParameters" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StrategyTest.fermat_InvalidParameters" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (2)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RepFilterTest.repFilter_emptyList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.OneFilterTest.oneFilter_emptyList" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StrategyTest.fermat_InvalidParameters" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.StrategyTest.trialDivision_InvalidParameters" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (3)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in sem4_se_dpi_i39 (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -470,21 +511,16 @@
       <workItem from="1519063577207" duration="2711000" />
       <workItem from="1519113484141" duration="1270000" />
       <workItem from="1519140722212" duration="1472000" />
+      <workItem from="1519202010639" duration="654000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_sem4_se_dpi_i39 - 2018.02.20 at 16h 40m 07s.xml">
+    <history-entry file="All_in_sem4_se_dpi_i39 - 2018.02.21 at 09h 44m 17s.xml">
       <configuration name="All in sem4_se_dpi_i39" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_sem4_se_dpi_i39_(1) - 2018.02.20 at 16h 53m 58s.xml">
-      <configuration name="All in sem4_se_dpi_i39 (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_sem4_se_dpi_i39_(2) - 2018.02.20 at 16h 56m 29s.xml">
-      <configuration name="All in sem4_se_dpi_i39 (2)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompressFunctionTest - 2018.02.19 at 15h 45m 17s.xml">
-      <configuration name="CompressFunctionTest" configurationId="JUnit" />
+    <history-entry file="All_in_sem4_se_dpi_i39_(3) - 2018.02.21 at 09h 34m 46s.xml">
+      <configuration name="All in sem4_se_dpi_i39 (3)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CompressFunctionTest_compress_emptyData - 2018.02.20 at 16h 37m 45s.xml">
       <configuration name="CompressFunctionTest.compress_emptyData" configurationId="JUnit" />
@@ -504,9 +540,15 @@
     <history-entry file="RepFilterTest_repFilter_emptyList - 2018.02.20 at 16h 39m 43s.xml">
       <configuration name="RepFilterTest.repFilter_emptyList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StrategyTest_fermat_InvalidParameters - 2018.02.21 at 09h 43m 07s.xml">
+      <configuration name="StrategyTest.fermat_InvalidParameters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StrategyTest_trialDivision_InvalidParameters - 2018.02.21 at 09h 42m 29s.xml">
+      <configuration name="StrategyTest.trialDivision_InvalidParameters" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24782000" />
+    <option name="totallyTimeSpent" value="25436000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,35 +560,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32795697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2521322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25479743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33742005" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
@@ -562,7 +604,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/task39/test/OneFilterTest.java</url>
-          <line>32</line>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -585,7 +627,7 @@
           <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -793,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/task39/test/TestHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -808,14 +842,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task39/test/StrategyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,14 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/task39/PrimeFactorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -939,18 +957,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/task39/test/StrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1087">
+          <caret line="75" column="38" lean-forward="false" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/task39/TrialDivisionOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="45" column="44" lean-forward="false" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task39/test/GroupFunctionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/task39/PrimeFactorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/task39/FermatOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="46" column="44" lean-forward="false" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        <state relative-caret-position="34">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
           <folding />
         </state>
       </provider>

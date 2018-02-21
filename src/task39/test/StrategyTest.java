@@ -9,6 +9,8 @@ import task39.TrialDivisionOperation;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Tests for the strategies.
  */
@@ -30,8 +32,48 @@ public class StrategyTest {
             PrimeFactorization fermat = factorizationsFermat.get(i);
             PrimeFactorization trial = factorizationsTrial.get(i);
 
-            Assert.assertEquals("Should be for the same number", fermat.getNumber(), trial.getNumber());
+            assertEquals("Should be for the same number", fermat.getNumber(), trial.getNumber());
             Assert.assertArrayEquals("Should contain the same factors", fermat.getFactors().toArray(), trial.getFactors().toArray());
         }
+    }
+
+    /**
+     * Ensure, that the trial division strategy will not crash on invalid parameters.
+     */
+    @Test
+    public void trialDivision_InvalidParameters() {
+        Context trialContext = new Context(new TrialDivisionOperation());
+
+        List<PrimeFactorization> factorizations = trialContext.executeStrategy(-1, 5);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+
+        factorizations = trialContext.executeStrategy(5, 2);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+
+        factorizations = trialContext.executeStrategy(5, -2);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+
+        factorizations = trialContext.executeStrategy(-5, -2);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+    }
+
+    /**
+     * Ensure, that the fermat strategy will not crash on invalid parameters.
+     */
+    @Test
+    public void fermat_InvalidParameters() {
+        Context fermatContext = new Context(new FermatOperation());
+
+        List<PrimeFactorization> factorizations = fermatContext.executeStrategy(-1, 5);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+
+        factorizations = fermatContext.executeStrategy(5, 2);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+
+        factorizations = fermatContext.executeStrategy(5, -2);
+        assertEquals("Should return a empty list", 0, factorizations.size());
+
+        factorizations = fermatContext.executeStrategy(-5, -2);
+        assertEquals("Should return a empty list", 0, factorizations.size());
     }
 }

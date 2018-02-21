@@ -2,7 +2,6 @@ package task39;
 
 import java.util.List;
 import java.util.stream.Collectors;
-// TODO: Negative values in the strategy range!
 
 /**
  * A class to store a number and it prime factorization.

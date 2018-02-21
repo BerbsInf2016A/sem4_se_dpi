@@ -3,7 +3,6 @@ package task39;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-// TODO: Operation of stratgy?
 
 /**
  * Strategy using Fermat to generate prime factors.
@@ -20,6 +19,7 @@ public class FermatOperation implements IPrimeFactorStrategy {
     @Override
     public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit) {
         ArrayList<PrimeFactorization> factorizations = new ArrayList<>();
+        if (lowerLimit > upperLimit || lowerLimit < 0) return factorizations;
         if (lowerLimit == 0 && upperLimit == 0) return factorizations;
 
         for (int i = lowerLimit; i <= upperLimit; i++) {

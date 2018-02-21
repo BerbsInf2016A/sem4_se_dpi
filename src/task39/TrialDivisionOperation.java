@@ -1,7 +1,6 @@
 package task39;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -18,7 +17,8 @@ public class TrialDivisionOperation implements IPrimeFactorStrategy {
      */
     @Override
     public List<PrimeFactorization> doOperation(int lowerLimit, int upperLimit) {
-        List<PrimeFactorization> factorizations = new LinkedList<>();
+        List<PrimeFactorization> factorizations = new ArrayList<>();
+        if (lowerLimit > upperLimit || lowerLimit < 0) return factorizations;
         if (lowerLimit == 0 && upperLimit == 0) return factorizations;
 
         for (int i = lowerLimit; i <= upperLimit; i++) {
